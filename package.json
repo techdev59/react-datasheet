@@ -80,5 +80,18 @@
     }
   },
   "main": "lib/index.js",
-  "types": "types/react-datasheet.d.ts"
+  "types": "types/react-datasheet.d.ts",
+  "jest": {
+    "reporters": [
+      "default",
+      [
+        "jest-junit",
+        {
+          "outputDirectory": "test-results",
+          "outputName": "junit.xml"
+        }
+      ]
+    ]
+  }
 }
+
