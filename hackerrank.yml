@@ -2,9 +2,9 @@ version: 1.0
 configuration:
     has_webserver: true
     scoring:
-        command: yarn install && rm -rf ./junit.xml && yarn test --watchAll=false --verbose --testResultsProcessor ./node_modules/jest-junit
+        command: yarn install && rm -rf ./result.xml && yarn test --watchAll=false --verbose --testResultsProcessor ./node_modules/jest-junit
         files:
-            - junit.xml
+            - result.xml
         # Define hidden test cases and declare file paths below to evaluate candidates' submissions.
         #
         # Learn more:
